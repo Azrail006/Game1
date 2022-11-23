@@ -11,7 +11,7 @@ button.addEventListener('click', () => {
         alert('Вам нужно похудеть');
     } else if (Math.sign(result) === -1) {
         alert('Вам нужно набрать вес');
-    } else {
+    } else { 
         alert('У вас идеальный вес');
     }
 });
