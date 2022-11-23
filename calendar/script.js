@@ -1,4 +1,6 @@
 const input = document.querySelector('input');
+const promt = document.querySelector('#promt');
+const output = document.querySelector('#output');
 const button = document.querySelector('.btn')
 
 
@@ -35,7 +37,7 @@ function getWeekDayByNumber(day) {
             alert('Нет таких значений');
 
     }
-}
+};
 
 
 
