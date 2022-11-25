@@ -4,17 +4,27 @@ const button = document.querySelector('.btn');
 const response = getRandomIntInclusive();
 console.log(response);
 
+const maxTryCount = 5
+let attempts = 0;
 
 button.addEventListener('click', (event) => {
-    const result = guessTheNumbers(parseInt(number.value), response)
-
-    if (result) {
-        alert('Вы выиграли');
+    if (attempts < maxTryCount) {
+        const result = guessTheNumbers(parseInt(number.value), response)
+        if (result) {
+            attempts++;
+            output.textContent = attempts
+            
+            alert('Вы выиграли');
+        } else {
+            event.preventDefault();
+            printMessage('Неправильно, попробуйте ещё раз')
+            
+            attempts++;
+            output.textContent = attempts
+        }
     } else {
-        printMessage('Не правильно попробуй ещё раз')
-
+        alert('Попытки закончились, вы проиграли')
     }
-
 });
 
 function getRandomIntInclusive() {
@@ -24,13 +34,9 @@ function getRandomIntInclusive() {
 }
 
 function guessTheNumbers(number, resp) {
-    if (number === resp) {
-        return true;
-    }
-    return false;
+    return number === resp;
 }
 function printMessage(message) {
-    // console.log(message);
     let again = document.createElement('p');
     again.textContent = message;
     output.appendChild(again);
