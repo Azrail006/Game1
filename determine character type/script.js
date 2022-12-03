@@ -18,7 +18,7 @@ button.addEventListener('click', (event) => {
     
     
     function defineSymbol(symbol) {
-        if (Number(symbol) || symbol === '0')  {
+        if (Number(symbol) || symbol === 0)  {
             console.log('Это число');
         } else if (isLetter(symbol) || anotherLetter(symbol)) {
             console.log('Это буква');

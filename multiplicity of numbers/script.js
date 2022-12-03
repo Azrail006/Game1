@@ -12,9 +12,9 @@ const result = multiplicityCheck(...number.value.split(',').map(i => Number(i)))
 
 function multiplicityCheck(X, Y) {
      if (X % Y === 0) {
-        console.log('Кратное');
+        alert('Кратное');
      } else {
-        console.log('Не кратное');
+        alert('Не кратное');
      }
 
 }
