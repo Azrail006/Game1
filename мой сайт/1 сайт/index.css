@@ -1,0 +1,35 @@
+ #mem img {
+     height: 50px;
+     width: 55px;
+ }
+
+ p {
+     text-align: center;
+     font-weight: bold;
+     font-size: 38px;
+ }
+
+ #meme_img img {
+     height: 340px;
+     width: 280px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto
+ }
+
+ input {
+     text-align: center;
+     padding: 10px;
+     margin-bottom: 20px;
+     margin-left: 40%;
+     width: 23%;
+     height: 15px;
+ }
+
+ button {
+     width: 20%;
+     font-size: 14pt;
+     height: 55px;
+     padding: 10px;
+
+ }
