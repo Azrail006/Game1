@@ -4,12 +4,20 @@
     padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
-    height: auto;
+    height: 100%;
     width: 100%;
-    
+    background: #172035;;
+
+}
+p {
+    color: #fff;
 }
 
 
@@ -19,7 +27,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 70px;
-    background: #CECECE;
+    background: #000000;
 }
 
 .header_content {
@@ -62,14 +70,14 @@ button {
     border-radius: 7px;
     border: none;
     outline: none;
-    background-color: #404040;
+    background-color: #000000;
     color: #f5f50d;
     padding: 2px 4px;
     height: 25px;
     cursor: pointer;
     transition: all .3s;
     width: 100%;
-    
+
 }
 
 .wrapMem {
@@ -78,7 +86,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1 0 auto;
 }
+
 .memgen {
     width: auto;
     height: auto;
@@ -87,7 +97,6 @@ button {
     align-items: center;
     justify-content: center;
     row-gap: 20px;
-    padding-top: 70px
 }
 
 .memgen__top {
@@ -96,7 +105,8 @@ button {
     flex-direction: column;
 }
 
-.memgen__top button, .memgen__top.inputs input {
+.memgen__top button,
+.memgen__top.inputs input {
     width: 100%;
 }
 
@@ -108,6 +118,7 @@ button {
     background-color: rgb(37, 17, 186);
     border-radius: 7px;
     margin-bottom: 5px;
+
 }
 
 
@@ -116,34 +127,57 @@ button {
     max-width: 340px;
     max-height: 340px;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .footer {
-    display: flex;
-    flex: auto;
+    flex: 0 0 auto;
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
-  
-    background-color: #0f111a;
+    background-color: #0e289d;
     height: auto;
-    width: 100
+    height: 40px;
 }
 
 
-.footer_left {
-    display: flex;
+.footer__left {
     margin-left: 30px;
     text-align: center;
     display: flex;
 }
-.footer_copy {
+
+.footer__copy {
     display: inline;
     font-size: 14px;
     color: #fff;
 }
-.footer__author a{
+
+.footer__author a {
     position: relative;
     text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
     color: #ff2b1d;
     cursor: pointer;
     line-height: 1;
+}
+
+.footer__author {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.footer,
+.inputs {
+    display: flex;
+    justify-content: space-between;
+   
+
 }
