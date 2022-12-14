@@ -181,3 +181,33 @@ button {
    
 
 }
+.meme_img>.meme__text-bottom  {
+    bottom: 0;
+}
+
+.meme_img>h2 {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0;
+    font-family: Impact,sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.meme_img>.meme__text-top {
+    top: 0;
+}

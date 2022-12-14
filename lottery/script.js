@@ -1,4 +1,4 @@
-const number = document.querySelector('#number');
+const number = document.querySelector('#numbers');
 const output = document.querySelector('#output')
 const button = document.querySelector('.btn');
 const response = getRandomIntInclusive();
