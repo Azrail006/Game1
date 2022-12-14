@@ -7,6 +7,7 @@
     "example": "examples"
   },
   "scripts": {
+    "start": "node ./NODE.js/process.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Azrail006/Game1#readme",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "express": "^4.18.2",
     "nodemon": "^2.0.20"
   }
