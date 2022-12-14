@@ -1,4 +1,4 @@
-const number = document.querySelector('#numbers');
+const num = document.querySelector('#numbers');
 const output = document.querySelector('#output')
 const button = document.querySelector('.btn');
 const response = getRandomIntInclusive();
@@ -6,12 +6,12 @@ console.log(response);
 
 
 button.addEventListener('click', (event) => {
-    const result = guessTheNumbers(parseInt(number.value), response)
+    const result = guessTheNumbers(parseInt(num.value), response)
 
     if (result) {
         alert('Вы выиграли');
     } else {
-        printMessage('Не правильно попробуй ещё раз')
+        printMessage('Попробуй ещё раз')
 
     }
 
